@@ -10,7 +10,7 @@ ALGORITHM= "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 30
 
 
-def hash_password(passwod: str) -> str:
+def hash_password(password: str) -> str:
     """Hash password using bccrypt"""
     return pwd_context.hash(password)
 
